@@ -1,0 +1,301 @@
+/* Code Icons Fonts Page, by @mabrasil. */
+
+/* PAGE */
+
+html {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    font: 300 20px/1.4 Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.66);
+    background: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+p {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+h5 {
+	padding: 15px 0; 
+    font-style: italic;
+}
+
+ol {
+	padding: 15px 0; 
+    font-size: 16px;
+	text-align: left
+}
+
+/* Code Examples */
+
+code {
+	color: white;
+	background-color: #8e44ad;
+}
+
+/* Inputs */
+
+input, fieldset {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+input {
+	color: inherit;
+	height: 24px;
+	padding: 25px 0;
+	box-shadow: inset 0 -2px #e7e7e7;
+}
+
+input:hover {
+	box-shadow: inset 0 -2px #ccc;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: inset 0 -2px #8e44ad;
+}
+
+/* Links */
+a {
+    color: #9b59b6;
+}
+
+a:hover,
+a:focus {
+    color: #8e44ad;
+}
+
+/* BACKGROUND */
+
+.background-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+noindex:-o-prefocus, .background-container {
+    display: none;
+}
+
+.background-noise {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	opacity: 0.85;
+    pointer-events: none;
+}
+
+.background-vignette {
+    background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+
+    /* IE9 workaround */
+    -webkit-box-shadow: inset 0 0 600px #000 \9;
+    box-shadow: inset 0 0 600px #000 \9;
+}
+
+/* LAYOUT */
+
+.content {
+    padding: 40px 0;
+    position: relative;
+}
+
+/* Text  */
+
+.header {
+    margin-bottom: 30px;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+.description {
+    margin-bottom: 60px;
+}
+
+.section{
+    padding: 30px 0 45px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Each Icon */
+
+.icon {
+	text-align: center;
+	padding-bottom: 16px;
+	margin-right: 25px;
+	margin-bottom: 16px;
+	float: left;
+	overflow: hidden;
+}
+
+.class {
+	float: left;
+}
+
+.code {
+	float: right;
+	text-align: right;
+}
+
+.size1of2 {
+	width: 50%;
+	background: none;
+}
+
+.size1of1 {
+	width: 100%;	
+	background: none;
+	font-size: 16px;
+}
+
+/* Font Test Drive */
+
+.textbox {
+	width: 70px;
+	height: 30px;
+	background: none;
+	padding: 0 0;
+}
+
+#testDrive {
+	display: block;
+	padding-top: 24px;
+	line-height: 1.5;
+}
+
+/* Menu (Buttons) */
+
+.btn {
+ 	border: none;
+	margin: 0px 10px 25px;
+	font-size: 16px;
+ 	display: inline-block;
+ 	text-align: center;
+ 	text-shadow: none;
+ 	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn:hover,
+.btn:active {
+	text-decoration: none;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	transition: 0.25s;
+	color: #fff;
+}
+
+.btn-large,
+.btn-small,
+.btn-mini {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.btn-large {
+	padding: 15px 50px;
+}
+
+.btn-transparent,
+.btn-transparent:focus, 
+.btn-transparent:active,
+.btn-transparent.active, 
+.btn-transparent.disabled, 
+.btn-transparent[disabled] {
+	background: rgba(255,255,255,.2) none;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+	-moz-box-shadow: inset 0px 0px 0px 2px #fff;
+	box-shadow: inset 0px 0px 0px 2px #fff;
+	color: #fff;
+}
+.btn-transparent:hover {
+	background: rgba(255,255,255,.5) none;
+}
+
+.dropdown-menu {
+    background-color: #95a5a6;
+}
+
+/* Placeholders */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #fff;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 979px) {
+	
+	/* Hide background on small devices */
+	.background-container {
+        display: none;
+    }
+	
+    .header {
+        font-size: 64px;
+    }
+
+    .section {
+        padding: 20px 0 25px;
+    }
+
+    .section-number {
+        font-size: 96px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 20px;
+		font-size: 18px;
+    }
+
+    .header {
+        font-size: 56px;
+    }
+
+    .section-item {
+        width: 50%;
+        margin: 20px 0;
+        float: left;
+    }
+
+    .section-number {
+        font-size: 80px;
+    }
+
+    .section-label {
+        margin-top: 5px;
+    }
+}
+
